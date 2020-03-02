@@ -179,7 +179,14 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'ohyba'
+    'aldryn_apphooks_config',
+    'parler',
+    'taggit',
+    'taggit_autosuggest',
+    'meta',
+    'sortedm2m',
+    'djangocms_blog',
+    'ohyba',
 ]
 
 LANGUAGES = (
@@ -234,3 +241,7 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+META_SITE_PROTOCOL = 'http'
+META_SITE_DOMAIN = 'localhost'
+TRUNCWORDS_COUNT = 1

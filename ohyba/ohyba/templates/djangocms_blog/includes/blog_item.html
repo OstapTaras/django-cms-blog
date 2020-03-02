@@ -1,0 +1,16 @@
+{% load djangocms_blog i18n easy_thumbnails_tags cms_tags %}
+
+<div class="post-item post-preview" id="post-{{ post.slug }}">
+    <a href="{{ post.get_absolute_url }}">
+    <h2 class="post-title">
+        {{ post.title }}
+        {% if post.subtitle %}
+            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        {% endif %}
+    </h2>
+    </a>
+    {% block blog_meta %}
+        {% include "djangocms_blog/includes/blog_meta.html" %}
+    {% endblock %}
+</div>
+<hr>

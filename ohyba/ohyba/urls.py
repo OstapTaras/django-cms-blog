@@ -15,6 +15,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^taggit_suggest/', include('taggit_autosuggest.urls')), # add post not working without
 ]
 
 urlpatterns += i18n_patterns(
