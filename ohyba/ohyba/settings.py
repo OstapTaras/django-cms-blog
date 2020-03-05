@@ -72,7 +72,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'uk'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Europe/Kiev'
 
@@ -191,21 +191,33 @@ INSTALLED_APPS = [
 
 LANGUAGES = (
     ## Customize this
-    ('uk', gettext('uk')),
+    ('en', gettext('en')),
+    # ('uk', gettext('uk')),
 )
 
 CMS_LANGUAGES = {
     ## Customize this
-    1: [
-        {
-            'code': 'uk',
-            'name': gettext('uk'),
-            'redirect_on_fallback': True,
-            'public': True,
-            'hide_untranslated': False,
-        },
-    ],
+    # 2: [
+    #     {
+    #         'code': 'uk',
+    #         'name': gettext('uk'),
+    #         'redirect_on_fallback': True,
+    #         'public': True,
+    #         'hide_untranslated': False,
+    #     },
+    # ],
+    # 1: [
+    #     {
+    #         'code': 'en',
+    #         'name': gettext('en'),
+    #         'redirect_on_fallback': True,
+    #         'public': True,
+    #         'hide_untranslated': False,
+    #     },
+    # ],
     'default': {
+        # 'code': 'en',
+        # 'name': gettext('en'),
         'redirect_on_fallback': True,
         'public': True,
         'hide_untranslated': False,
@@ -216,7 +228,9 @@ CMS_TEMPLATES = (
     ## Customize this
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
+    ('sidebar_right.html', 'Sidebar Right'),
+    ('about.html', 'About'),
+    ('blog.html', 'Blog'),
 )
 
 CMS_PERMISSION = True

@@ -43,3 +43,8 @@ MANIFEST
 
 # PyCharm
 .idea
+
+
+# Custom
+/templates
+media/
